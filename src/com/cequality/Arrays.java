@@ -6,6 +6,7 @@
 package com.cequality;
 
 import java.math.BigDecimal;
+import java.util.*;
 
 /**
  *
@@ -58,6 +59,19 @@ public class Arrays {
         java.util.Arrays.sort(arr5);
         
         System.out.println(java.util.Arrays.toString(arr5));
+     
+        
+        Integer[] arr6 = {1,2,3,4,5,6};
+        List<Integer> l = java.util.Arrays.asList(arr6);
+        l.set(0, new Integer(10)); //El cambio aplica al arreglo y a la lista.
+        arr6[5] = 60;   //El cambio aplica al arreglo y a la lista.
+        
+        System.out.println("Arreglo:" + java.util.Arrays.toString(arr6));
+        
+        for (Object x : arr6) {
+            System.out.print(x + ",");
+        }
+        
         
     }
     
