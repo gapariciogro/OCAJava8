@@ -13,7 +13,7 @@ import java.util.*;
  * @author Gilberto
  */
 public class Arrays {
-    public static void main(String... args) {
+    static public void main(String... args) {
         int[] arr = new int[3];
         for (int x : arr) {
             System.out.println(x);
