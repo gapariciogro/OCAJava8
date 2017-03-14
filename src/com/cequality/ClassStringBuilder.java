@@ -20,5 +20,11 @@ public class ClassStringBuilder {
         
         //But comparing as Strings, is true
         System.out.println("sb1.toString() equals sb2.toString() ? " + ((sb1.toString()).equals(sb2.toString())));
+        
+        
+        StringBuilder sb3 = new StringBuilder("Gilberto Eric Aparicio Guerrero, Nació en la Ciudad de México en el año de 1977");
+        sb3.replace(5, 12, "hel");
+        
+        System.out.println(sb3);
     }
 }
