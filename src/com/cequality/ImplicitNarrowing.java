@@ -16,6 +16,11 @@ public class ImplicitNarrowing {
         short s = 1;  // 1 es entero... narrowing implicito porque el valor es valido para un short
         char c = 0x33;    //0x33 es un entero en el rango de char. Realiza Narrowing implicito
         
+        final long L1 = 1L;
+        //byte b0 = L1; //No permitido de long aunque sea constante
+        
+        
+        
         final short S1 = 1;
         byte b1 = S1;
         
